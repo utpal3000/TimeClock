@@ -31,9 +31,11 @@ export function TimeDisplay({ time }: TimeDisplayProps) {
         <span>{Intl.DateTimeFormat().resolvedOptions().timeZone}</span>
       </div>
 
-      <div className="text-[8rem] font-bold leading-none tracking-tight mb-4 font-mono">
-        {formatTime(time)}
-      </div>
+      <div className="text-[calc(8vw+2rem)] font-bold leading-none tracking-tight mb-4 font-mono">
+  <span>
+    {formatTime(time)}
+  </span>
+</div>
 
       <div className="flex items-center justify-center gap-3 text-2xl mb-8">
         <Calendar className="w-6 h-6" />

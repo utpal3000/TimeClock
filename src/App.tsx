@@ -18,7 +18,7 @@ function App() {
     const timer = setInterval(() => setTime(new Date()), 1000);
     const wallpaperTimer = setInterval(() => {
       setWallpaperIndex((prev) => (prev + 1) % wallpapers.length);
-    }, 30000);
+    }, 60000);
 
     return () => {
       clearInterval(timer);
@@ -47,13 +47,10 @@ function App() {
       </div>
 
       <div className="absolute bottom-4 left-4 text-white/60 text-sm">
-        Background changes every 30 seconds
+        Background changes every 60 seconds
       </div>
 
-      <div className="absolute bottom-4 right-4 text-white/60 flex gap-2 text-sm">
-        <Clock className="w-4 h-4" />
-        Precision Time
-      </div>
+     
     </div>
   );
 }
